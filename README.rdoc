@@ -1,0 +1,13 @@
+== Sample app to demonstrate ZK & Unicorn issue
+
+    bundle install
+
+=== Works in miliseconds
+
+    thin start -p 8080
+    curl localhost:8080
+
+=== Works 30 seconds
+
+    unicorn -c config/unicorn.rb
+    curl localhost:8080
